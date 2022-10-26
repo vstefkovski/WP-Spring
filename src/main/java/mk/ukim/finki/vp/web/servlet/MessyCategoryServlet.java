@@ -10,7 +10,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet(name = "category-servlet", urlPatterns = "/servlet/category")
+@WebServlet(name = "messy-category-servlet", urlPatterns = "/servlet/messy/category")
 public class MessyCategoryServlet extends HttpServlet {
 
     class Category {
