@@ -63,7 +63,7 @@ public class CategoryServlet extends HttpServlet {
         String categoryName = (String)req.getParameter("name");
         String categoryDesc = (String) req.getParameter("description");
         categoryService.create(categoryName,categoryDesc);
-        resp.sendRedirect("/servlet/category");
+        resp.sendRedirect("/servlet/thymeleaf/category");
     }
 
 }
