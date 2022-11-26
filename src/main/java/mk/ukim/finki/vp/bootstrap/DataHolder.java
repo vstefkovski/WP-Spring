@@ -1,10 +1,7 @@
 package mk.ukim.finki.vp.bootstrap;
 
 import lombok.Getter;
-import mk.ukim.finki.vp.model.Category;
-import mk.ukim.finki.vp.model.Manufacturer;
-import mk.ukim.finki.vp.model.Product;
-import mk.ukim.finki.vp.model.User;
+import mk.ukim.finki.vp.model.*;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -18,6 +15,7 @@ public class DataHolder {
     public static List<User> users = new ArrayList<>();
     public static List<Manufacturer> manufacturers = new ArrayList<>();
     public static List<Product> products = new ArrayList<>();
+    public static List<ShoppingCart> shoppingCarts = new ArrayList<>();
 
     @PostConstruct
     public void init(){
